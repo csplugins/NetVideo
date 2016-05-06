@@ -13,6 +13,10 @@
 #include <vector>
 
 class Customer {
+private:
+    std::string name;
+    std::vector<Rental> rentals;
+
 public:
 
     // constructor
@@ -29,10 +33,6 @@ public:
 
   //calculates the amount for a rental
   double amountFor(const Rental& r) const;
-
-private:
-    std::string name;
-    std::vector<Rental> rentals;
 };
 
 #endif
