@@ -42,6 +42,16 @@ int main() {
     assert(movie.getCode() == Video::REGULAR);
   }
 
+  // very long title
+  {
+    Video movie("The Assassination of Jesse James by the Coward Robert Ford", Video::NEW_RELEASE);
+
+    assert(movie.getTitle() == "The Assassination of Jesse James by the Coward Robert Ford ");
+    assert(movie.getCode() == Video::NEW_RELEASE);
+
+    assert(movie.getCode() == Video::REGULAR);
+  }
+
   // change price
   {
     Video movie("A", Video::NEW_RELEASE);
