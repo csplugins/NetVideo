@@ -10,6 +10,10 @@
 #include <string>
 
 class Video {
+private:
+    std::string title;
+    int price_code;
+
 public:
 
     static const int REGULAR      = 0;
@@ -27,10 +31,6 @@ public:
 
     // set movie price code
     void setPriceCode(int new_price_code);
-
-private:
-    std::string title;
-    int price_code;
 };
 
 #endif

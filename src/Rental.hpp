@@ -10,6 +10,10 @@
 #include "Video.hpp"
 
 class Rental {
+private:
+    Video movie;
+    int days;
+
 public:
 
     // constructor
@@ -20,10 +24,6 @@ public:
 
     // movie rented
     const Video& getVideo() const;
-
-private:
-    Video movie;
-    int days;
 };
 
 #endif
